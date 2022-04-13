@@ -1,0 +1,41 @@
+@use '../base/helpers' as *;
+@use '../base/variables' as *;
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  
+  background: $white;
+  border-top: rem(1) solid $lighter-grey;
+
+  width: 100%;
+  min-height: rem(60);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  button,
+  a {
+    border: none;
+    background: transparent;
+
+    i {
+      font-size: rem(23);
+      color: $accent-color;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      i {
+        color: $accent-secondary;
+      }
+    }
+
+    
+
+  }
+
+}
+

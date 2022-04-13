@@ -1,0 +1,28 @@
+@use './variables' as *;
+
+body,
+input,
+button,
+textarea {
+  font-family: $primary-font;
+}
+
+li {
+  list-style-type: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.to-front {
+  z-index: 25;
+}

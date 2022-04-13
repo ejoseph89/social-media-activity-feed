@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./scss/main.scss">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <button class="header__nav--btn">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="header__search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <form>
+        <label for="search" hidden>Search for firends, posts, or live</label>
+        <input type="text" id="search" placeholder="Search">
+      </form>
+    </div>
+    <button class="header__profile--btn">
+      <!-- <i class="fa-solid fa-user"></i> -->
+      <img src="./assets/images/profile-pic.jpg" alt="">
+    </button>
+    <!-- @todo: make navigation hide on scroll event on main content -->
+    <!-- Quick navigation -->
+    <nav class="navigation">
+      <ul>
+        <li class="current"> <a href="#">home</a> </li>
+        <li> <a href="#">trending</a> </li>
+        <li> <a href="#">live</a> </li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+  <!-- Main content -->
+  <main class="content">
+    <!-- Posts -->
+    <section class="content__post--list">
+    </section>
+
+    <!-- Make post -->
+    <section class="content__post hidden">
+      <div class="content__post--text-img">
+        <form id="post-form">
+          <textarea id="post-text" type="text" placeholder="Share your thoughts..." rows="3" cols="40"></textarea>
+          <div class="post-form-control">
+            <label for="image-file">Share an Image <i class="fa-solid fa-image"></i></label>
+            <section class="upload-notifications">
+              <div class="upload-success hidden">Image uploaded <i class="fa-regular fa-thumbs-up"></i></div>
+              <div class="upload-cancel hidden">Remove file<i class="fa-solid fa-square-xmark"></i></div>
+            </section>
+            <input type="file" name="" id="image-file" hidden accept="image/*">
+          </div>
+          <div class="upload-btns">
+            <input id="submitPostBtn" type="submit" form="post-form" value="Post" class="submitPostBtn" />
+            <button type="button" class="cancel-post">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a class="footer__item footer__nav--home">
+      <i class="fa-solid fa-house-chimney"></i>
+    </a>
+    <button class="footer__item footer__nav--post">
+      <i class="fa-solid fa-plus"></i>
+    </button>
+    <a class="footer__item footer__nav--messages">
+      <i class="fa-solid fa-message"></i>
+    </a>
+    <a class="footer__item footer__nav--notifications">
+      <i class="fa-solid fa-bell"></i>
+    </a>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+</html>

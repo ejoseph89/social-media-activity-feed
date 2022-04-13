@@ -1,0 +1,234 @@
+@use '../base/helpers' as *;
+@use '../base/variables' as *;
+
+.content {
+  // border: 1px solid green;
+
+  width: 100%;
+  margin-top: rem(70 + 30);
+  margin-bottom: rem(60);
+
+  flex: 1;
+
+  overflow: auto;
+
+
+// Post List
+  #{&}__post--list {
+    width: 90%;
+    margin: 0 auto;
+
+    article {
+      border-radius: rem(10);
+      margin: rem(20) 0;
+      padding: rem(20);
+      -webkit-box-shadow: 0px 0px 16px -8px #DB4B07; 
+      box-shadow: 0px 0px 16px -8px #DB4B07;
+      
+    }
+    
+    img {
+      width: 100%;
+      margin-top: rem(5);
+    }
+
+    .postHeader {
+      display: flex;
+      justify-content: space-between;
+
+      &__details {
+        
+        &--user {
+          display: flex;
+        }
+        
+        button {
+          margin-right: rem(10);
+          background: transparent;
+          border: 1px solid $accent-color;
+          border-radius: 50%;
+
+          @include flexCenter(row);
+          padding: rem(5);
+
+          &:hover {
+            border-color: $accent-secondary;
+          }
+
+        }
+        span {
+          margin-right: rem(10);
+          
+          .post__username {
+            font-size: rem(17);
+            font-weight: 600;
+          }
+        }
+
+        .post__date {
+          font-weight: 300;
+          font-size: rem(14);
+          color: $light-grey;
+        }
+      }
+
+      .postEdit {
+        background: transparent;
+        border: none;
+        font-size: rem(15);
+
+        @include flexCenter(row);
+        padding: rem(5);
+      }
+
+    }
+
+    .postContent {
+      margin: rem(25) 0;
+      font-size: rem(20);
+      font-weight: 300;
+    }
+
+    .postFooter {
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        @include flexCenter(row);
+
+        background: transparent;
+        // border: rem(1) solid $black;
+        border: none;
+        border-radius: 50%;
+
+        font-size: rem(20);
+        color: $accent-tertiary;
+
+        &:hover {
+          color: $accent-secondary;
+        }
+      }
+    }
+
+    
+  }
+
+
+  // Post Modal
+  #{&}__post {
+    position: fixed;
+    bottom: rem(59);
+    left: 50%;
+
+    background: $white;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+    padding-top: rem(10);
+    margin: rem(20) auto;
+    margin-bottom: 0;
+    border-top: rem(5) solid $accent-color;
+    border-top-left-radius: rem(20);
+    border-top-right-radius: rem(20);
+  }
+
+  #{&}__post--text-img {
+    #post-form {
+      height: rem(250);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 90%;
+      margin: 0 auto;
+
+      textarea {
+        border: rem(1) solid $light-grey;
+        border-radius: rem(7);
+        padding: rem(10);
+        outline: none;
+        font-size: rem(16);
+
+        &::placeholder {
+          font-family: 'Poppins', sans-serif;
+        }
+      }
+
+      .post-form-control {
+        label {
+          color: $accent-color;
+          display: flex;
+          align-items: center;
+
+          &:hover {
+            cursor: pointer;
+            color: $accent-secondary;
+          }
+
+          i {
+            margin-left: rem(10);
+          }
+        }
+
+        .upload-notifications {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: rem(10) 0;
+        }
+
+        .upload-success,
+        .upload-cancel {
+          color: $accent-secondary;
+
+          i {
+            margin-left: rem(5);
+          }
+        }
+
+        .upload-cancel {
+          color: $accent-tertiary;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .upload-btns {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        .submitPostBtn,
+        .cancel-post {
+          width: 40%;
+          padding: rem(7) rem(14);
+          background: $accent-color;
+          color: $white;
+          border: none;
+          border-radius: rem(5);
+  
+          &:hover {
+            background-color: $accent-secondary;
+            cursor: pointer;
+          }
+  
+          &:disabled {
+            color: $white;
+            background: $light-grey;
+            cursor: not-allowed;
+          }
+  
+        }
+
+        .cancel-post {
+          background: $accent-tertiary;
+        }
+
+      }
+    }
+  } 
+
+}
