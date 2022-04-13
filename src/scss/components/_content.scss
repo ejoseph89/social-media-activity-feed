@@ -2,8 +2,6 @@
 @use '../base/variables' as *;
 
 .content {
-  // border: 1px solid green;
-
   width: 100%;
   margin-bottom: rem(60);
 
@@ -11,12 +9,15 @@
 
   overflow: auto;
 
+  background: $white;
+
 
 // Post List
   #{&}__post--list {
     width: 90%;
     margin: 0 auto;
 
+    // From index.js - created element
     article {
       border-radius: rem(10);
       margin: rem(20) 0;
@@ -230,4 +231,14 @@
     }
   } 
 
+}
+
+// Dark mode
+.dark {
+  background: $black;
+  color: $white;
+
+  i {
+    color: $white;
+  }
 }
