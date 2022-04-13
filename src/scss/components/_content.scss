@@ -121,13 +121,14 @@
     left: 50%;
 
     background: $white;
+    overflow: hidden;
 
     transform: translateX(-50%);
 
     width: 100%;
-    padding-top: rem(10);
-    margin: rem(20) auto;
-    margin-bottom: 0;
+    // padding-top: rem(10);
+    // margin: rem(20) auto;
+    // margin-bottom: 0;/
     border-top: rem(5) solid $accent-color;
     border-top-left-radius: rem(20);
     border-top-right-radius: rem(20);
@@ -234,7 +235,8 @@
 }
 
 // Dark mode
-.dark {
+.dark,
+.dark > * {
   background: $black;
   color: $white;
 
