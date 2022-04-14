@@ -1,4 +1,4 @@
-# Helcim UX Developer code challenge - social media news feed  
+# Social media news feed - Code challenge  
 
 ## Link to the deployed project: [Social Media News Feed](https://ejoseph89-social-media-newsfeed.netlify.app/)  
 
@@ -19,7 +19,7 @@
    ctrl + click link in terminal  
 4. Run build command  
    npm run build - build version will be in the dist folder  
-   
+
 
 
 
