@@ -21,10 +21,20 @@
 4. Run build command  
    npm run build - build version will be in the dist folder  
 
-### Features  
+
+#### Usage  
 ---  
 
-#### Usage
+##### Using The Required Features  
+1. Click the '+' icon on the footer to open the post modal.  
+2. To activate the 'Post' button, enter content in the textarea, or upload an image by clicking 'Share an image', or both to make a post with text and image.  
+3. To make the post, click 'Post' button once there is content in textarea, and/or an image is uploaded.  
+4. To remove an uploaded image, click 'Remove file' that appears if an image is successfully uploaded.
+5. To cancel making the post and exit, click 'Cancel'.  
+
+
+### Features  
+---  
 
 ##### Key Features
 - The app lets a user add a post by clicking the '+' button.  
@@ -34,6 +44,8 @@
 - If there is content in the textare (text post), or an image is uploaded, then the 'Post' button will be activated.  
 - If there is no text content, or an image file uploaded, the 'Post' button will be disabled - empty posts cannot be make.  
 - At any point in the process of a making a post, the user can click 'Cancel' and close the modal and clear content.  
+- A successful post will be posted at the top of the post list, and the screen will scroll to the top.  
+- Date formatted as required, with the exact time of the post as well.  
 
 ##### UX Considerations  
 - I've placed the post modal (form to add a new post) at the most accessible location (for left or right handed people), towards the bottom of the viewport. 
@@ -43,6 +55,7 @@
 - In between these two buttons is a search bar, which can be used to look up people, communities, posts etc.  
 - To the bottom of the top nav bar is another navigation, which can let users sort posts based on whats trending, or what's live.  
 - Not allowing an empty post - by disabiling the 'Post' button if there is no post or image. 
+- Auto scroll to the top of the viewport once a new post is made.  
 - Allowing users to remove uploaded image
 - Allowing users to cancel and exit from making a post
 - Closing the post modal when the 'Home' button on the footer is clicked. 
