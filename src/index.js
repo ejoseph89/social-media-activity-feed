@@ -11,30 +11,67 @@ const currentDate = `${month} ${day}, ${year}`
 
 
 
+
+
+// Main nav toggle
+const navButton = document.querySelector('.header__nav--btn')
+const closeNavButton = document.querySelector('.header__main--nav-close')
+const navSection = document.querySelector('.header__main--nav')
+const mainContent = document.querySelector('.content')
+
+// Opening nav
+navButton.addEventListener('click', (e) => {
+  navSection.classList.remove('hidden')
+  closeNavButton.classList.remove('hidden')
+})
+// Closing nav
+closeNavButton.addEventListener('click', (e) => {
+  navSection.classList.add('hidden')
+  closeNavButton.classList.add('hidden')
+})
+mainContent.addEventListener('click', () => {
+  navSection.classList.add('hidden')
+  closeNavButton.classList.add('hidden')
+})
+
+// Opening and closing nav on swipe
+let touchstartX = 0
+let touchend = 0
+const handleSwipe = () => {
+  if (touchendX < touchstartX) {
+    navSection.classList.add('hidden')
+    closeNavButton.classList.add('hidden')
+  }
+}
+navSection.addEventListener('touchstart', (e) => {
+  touchstartX = e.changedTouches[0].screenX
+})
+navSection.addEventListener('touchend', (e) => {
+  touchendX = e.changedTouches[0].screenX
+  handleSwipe()
+})
+
+
+
+
 // Post Modal Features
 const postModal = document.querySelector('.content__post')
 const openPostModal = document.querySelector('.footer__nav--post')
 const postBtn = document.querySelector('#submitPostBtn')
 const cancelPostBtn = document.querySelector('.cancel-post')
 const homeBtn = document.querySelector('.footer__nav--home')
-const mainContent = document.querySelector('.content')
-const header = document.querySelector('.header')
 
 // Toggle post modal
 const toggleModal = () => {
   postModal.classList.toggle('hidden')
   const postModalHidden = postModal.classList.contains('hidden')
-  console.log(postModalHidden)
 
   // Closing the post modal on clicking on home button on footer
   if(postModalHidden === false) {
     homeBtn.addEventListener('click', (e) => {
       postModal.classList.add('hidden')
-    })
-    
+    })    
   }
-
-  
 }
 
 openPostModal.addEventListener('click', toggleModal)
@@ -87,6 +124,7 @@ const postText = document.querySelector('#post-text')
 const previewContainer = document.querySelector('.preview-container')
 const uploadSuccessMsg = document.querySelector('.upload-success')
 const cancelUpload = document.querySelector('.upload-cancel')
+
 postForm.addEventListener('click', (e) => {
   postText.classList.toggle('to-front')
   console.log(postForm.classList)
@@ -201,7 +239,6 @@ class UI {
   }
 
 
-
   static addPostToList(post) {
     const postList = document.querySelector('.content__post--list')
 
@@ -241,8 +278,6 @@ class UI {
     uploadSuccessMsg.classList.add('hidden')
   }
 }
-
-
 
 
 // EVENTS
