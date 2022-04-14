@@ -2,13 +2,14 @@
 
 ## Link to the deployed project: [Social Media News Feed](https://ejoseph89-social-media-newsfeed.netlify.app/)  
 
-### Built with:  
-- HTML
-- SASS
-- JS  
 
 ### Details  
 --- 
+
+#### Built with:  
+- HTML
+- SASS
+- JS  
  
 #### Installation
 1. Clone the repo  
@@ -17,16 +18,16 @@
    npm install  
 3. Run dev server  
    npm start  
-   ctrl + click link in terminal  
+   ctrl + click link in terminal to open in browser  
 4. Run build command  
    npm run build - build version will be in the dist folder  
 
 
-#### Usage  
+### Usage  
 ---  
 
 ##### Using The Required Features  
-1. Click the '+' icon on the footer to open the post modal.  
+1. Once dev server is running, click the '+' icon on the footer to open the post modal.  
 2. To activate the 'Post' button, enter content in the textarea, or upload an image by clicking 'Share an image', or both to make a post with text and image.  
 3. To make the post, click 'Post' button once there is content in textarea, and/or an image is uploaded.  
 4. To remove an uploaded image, click 'Remove file' that appears if an image is successfully uploaded.
