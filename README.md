@@ -19,8 +19,8 @@
 3. Run dev server  
    npm start  
    ctrl + click link in terminal to open in browser  
-4. Run build command  
-   npm run build - build version will be in the dist folder  
+4. Run build command - build version will be in the dist folder
+   npm run build  
 
 
 
