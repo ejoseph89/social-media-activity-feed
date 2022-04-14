@@ -26,20 +26,21 @@ navButton.addEventListener('click', (e) => {
   closeNavButton.classList.remove('hidden')
   postModal.classList.add('hidden')
 })
-// Closing nav
+// Closing nav - by clicking close button
 closeNavButton.addEventListener('click', (e) => {
   navSection.classList.add('hidden')
   closeNavButton.classList.add('hidden')
 })
+// Closing nav - by clicking outside the nav
 mainContent.addEventListener('click', () => {
   navSection.classList.add('hidden')
   closeNavButton.classList.add('hidden')
 })
+// Closing nav - by clicking home button
 homeBtn.addEventListener('click', (e) => {
   navSection.classList.add('hidden')
   closeNavButton.classList.add('hidden')
 })
-
 
 // Opening and closing nav on swipe
 let touchstartX = 0
@@ -61,7 +62,8 @@ navSection.addEventListener('touchend', (e) => {
 
 
 
-// Post Modal Features
+
+// Post Modal Features - form for adding a new post
 const postModal = document.querySelector('.content__post')
 const openPostModal = document.querySelector('.footer__nav--post')
 const postBtn = document.querySelector('#submitPostBtn')
@@ -106,8 +108,6 @@ cancelPostBtn.addEventListener('click', (e) => {
 
 
 
-
-
 // Post input check: making sure input is filled before post sumbmission
 postBtn.disabled = true
 document.querySelector('#post-text').addEventListener('input', (e) => {
@@ -124,7 +124,8 @@ document.querySelector('#post-form').addEventListener('change', (e) => {
 
 
 
-// Image file upload
+
+// Handeling image file upload
 const uploadedImageInput = document.querySelector('#image-file')
 const postForm = document.querySelector('#post-form')
 const postText = document.querySelector('#post-text')
@@ -152,7 +153,6 @@ uploadedImageInput.addEventListener('change', (e) => {
   reader.onload = logFile
 
   reader.readAsDataURL(uploadedImageInput.files[0])
-  
 })
 // Canceling upload and removing uploaded file
 cancelUpload.addEventListener('click', (e) => {
@@ -169,12 +169,13 @@ cancelUpload.addEventListener('click', (e) => {
   cancelUpload.classList.add('hidden')
 })
 
-
 let str
 function logFile(event) {
   str = event.target.result
   return str
 }
+
+
 
 
 
@@ -245,7 +246,6 @@ class UI {
     posts.forEach((post) => UI.addPostToList(post))
   }
 
-
   static addPostToList(post) {
     const postList = document.querySelector('.content__post--list')
 
@@ -287,25 +287,21 @@ class UI {
 }
 
 
+
+
+
 // EVENTS
 // Display Posts
 document.addEventListener('DOMContentLoaded', UI.displayPosts())
 
-
 // Add a post
 document.querySelector('#post-form').addEventListener('submit', (e) => {
   e.preventDefault()
-
   // get form values
   const text = document.querySelector('#post-text').value
   const postInput = document.querySelector('#post-text')
-
-
   // New post object
   const post = new Post(id = 1, user = 'emiljoseph', text, imageFile=str, postDate = currentDate, postTime = time)
-
-
-
   // Add post to post list
   if(text.length === 0 && post.imageFile === '') {
     postBtn.disabled = true
