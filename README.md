@@ -26,5 +26,5 @@
 
 ### Contact  
 ---  
-Emil Joseph - (emiljoseph@gmail.com) (https://www.emiljoseph.io)
+Emil Joseph - (emiljoseph@gmail.com) (https://www.emiljoseph.io)  
 Project link - (https://ejoseph89-social-media-newsfeed.netlify.app/)  
