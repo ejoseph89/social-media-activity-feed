@@ -43,7 +43,7 @@ homeBtn.addEventListener('click', (e) => {
 
 // Opening and closing nav on swipe
 let touchstartX = 0
-let touchend = 0
+let touchendX = 0
 const handleSwipe = () => {
   if (touchendX < touchstartX) {
     navSection.classList.add('hidden')
@@ -101,7 +101,6 @@ cancelPostBtn.addEventListener('click', (e) => {
   cancelUpload.classList.add('hidden')
   mainContent.scrollTo(0, 0)
 })
-
 
 
 
