@@ -12,16 +12,31 @@ const currentDate = `${month} ${day}, ${year}`
 
 
 // Post Modal Features
-
-// Toggle post modal
 const postModal = document.querySelector('.content__post')
 const openPostModal = document.querySelector('.footer__nav--post')
 const postBtn = document.querySelector('#submitPostBtn')
 const cancelPostBtn = document.querySelector('.cancel-post')
+const homeBtn = document.querySelector('.footer__nav--home')
+const mainContent = document.querySelector('.content')
+const header = document.querySelector('.header')
 
+// Toggle post modal
 const toggleModal = () => {
   postModal.classList.toggle('hidden')
+  const postModalHidden = postModal.classList.contains('hidden')
+  console.log(postModalHidden)
+
+  // Closing the post modal on clicking on home button on footer
+  if(postModalHidden === false) {
+    homeBtn.addEventListener('click', (e) => {
+      postModal.classList.add('hidden')
+    })
+    
+  }
+
+  
 }
+
 openPostModal.addEventListener('click', toggleModal)
 postBtn.addEventListener('click', (e) => {
   postModal.classList.add('hidden')
@@ -41,6 +56,8 @@ cancelPostBtn.addEventListener('click', (e) => {
   cancelUpload.classList.add('hidden')
   mainContent.scrollTo(0, 0)
 })
+
+
 
 
 
