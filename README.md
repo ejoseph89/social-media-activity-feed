@@ -10,10 +10,10 @@
 ### Getting Started
 ---  
 ### Installation
-1. Clone the repo
-   git clone https://github.com/ejoseph89/social-media-activity-feed.git
-2. Install NOM packages
-   npm install
+1. Clone the repo  
+   git clone https://github.com/ejoseph89/social-media-activity-feed.git  
+2. Install NOM packages  
+   npm install  
 3. 
 
 
