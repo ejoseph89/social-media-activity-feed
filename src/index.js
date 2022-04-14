@@ -24,6 +24,7 @@ const homeBtn = document.querySelector('.footer__nav--home')
 navButton.addEventListener('click', (e) => {
   navSection.classList.remove('hidden')
   closeNavButton.classList.remove('hidden')
+  postModal.classList.add('hidden')
 })
 // Closing nav
 closeNavButton.addEventListener('click', (e) => {
