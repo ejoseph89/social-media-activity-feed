@@ -234,7 +234,7 @@ class UI {
       {
         id: 4,
         user: 'emiljoseph',
-        text: 'Challenge finished! Thank you Helcim for this amazing opportunity!',
+        text: 'Challenge finished! Thank you for this amazing learning opportunity!',
         imageFile:'',
         postDate: 'April 13, 2021',
         postTime: '1:48 PM'

@@ -13,7 +13,7 @@
 #### Installation
 1. Clone the repo  
    git clone https://github.com/ejoseph89/social-media-activity-feed.git  
-2. Install NOM packages  
+2. Install NPM packages  
    npm install  
 3. Run dev server  
    npm start  
@@ -48,6 +48,7 @@
 - Closing the post modal when the 'Home' button on the footer is clicked. 
 - Allowing 'Swipe left' to close the nav, when the hamburger navigation is open. 
 - Not allowing both the Hamburget menu and post modal to be open at the same time. 
+- Spacing between menu items, buttons are considered for mobile use.  
 
  
 ### Contact  
