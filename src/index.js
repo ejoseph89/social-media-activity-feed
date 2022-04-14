@@ -75,7 +75,9 @@ const toggleModal = () => {
   if(postModalHidden === false) {
     homeBtn.addEventListener('click', (e) => {
       postModal.classList.add('hidden')
-    })    
+    })   
+    navSection.classList.add('hidden')
+    closeNavButton.classList.add('hidden') 
   }
 }
 
