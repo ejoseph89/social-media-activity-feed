@@ -14,7 +14,12 @@
    git clone https://github.com/ejoseph89/social-media-activity-feed.git  
 2. Install NOM packages  
    npm install  
-3. 
+3. Run dev server  
+   npm start  
+   ctrl + click link in terminal  
+4. Run build command  
+   npm run build - build version will be in the dist folder  
+   
 
 
 
