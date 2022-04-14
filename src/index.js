@@ -18,6 +18,7 @@ const navButton = document.querySelector('.header__nav--btn')
 const closeNavButton = document.querySelector('.header__main--nav-close')
 const navSection = document.querySelector('.header__main--nav')
 const mainContent = document.querySelector('.content')
+const homeBtn = document.querySelector('.footer__nav--home')
 
 // Opening nav
 navButton.addEventListener('click', (e) => {
@@ -33,6 +34,11 @@ mainContent.addEventListener('click', () => {
   navSection.classList.add('hidden')
   closeNavButton.classList.add('hidden')
 })
+homeBtn.addEventListener('click', (e) => {
+  navSection.classList.add('hidden')
+  closeNavButton.classList.add('hidden')
+})
+
 
 // Opening and closing nav on swipe
 let touchstartX = 0
@@ -59,7 +65,6 @@ const postModal = document.querySelector('.content__post')
 const openPostModal = document.querySelector('.footer__nav--post')
 const postBtn = document.querySelector('#submitPostBtn')
 const cancelPostBtn = document.querySelector('.cancel-post')
-const homeBtn = document.querySelector('.footer__nav--home')
 
 // Toggle post modal
 const toggleModal = () => {
