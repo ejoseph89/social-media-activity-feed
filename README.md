@@ -66,10 +66,24 @@
 - Not allowing both the Hamburget menu and post modal to be open at the same time. 
 - Spacing between menu items, buttons are considered for mobile use.  
 
-##### Potential improvements  
+##### Next Steps  
 - Animations and transitions to make the user experience more enjoyable, and changes more subtle, and not snappy.  
 - Proceeding with an object oriented approach for the UI (like the Post Class), where all UI related functions are together.  
 - Giving more consideration to performance and accessibility.  
+
+#### Resources  
+1. File object
+   1. [File reader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader)  
+   2. [Using files](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications#accessing_selected_files)  
+   3. [Input type file](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#using_file_inputs)  
+2. Sass
+   1. [Partials](https://www.youtube.com/watch?v=9Ld-aOKsEDk)  
+   2. [Sass with Parcel](https://www.youtube.com/watch?v=wYWf2m_yzBQ)  
+3. JavaScript  
+   1. [DOM Manipulation](https://www.youtube.com/watch?v=JaMCxVWtW58)  
+4. Mobile UX Design  
+   1. [Interation design](https://www.interaction-design.org/literature/topics/mobile-ux-design)  
+   2. [Do's and Dont's](https://xd.adobe.com/ideas/principles/app-design/10-dos-donts-mobile-app-design/)  
 
 
 
