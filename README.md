@@ -23,7 +23,7 @@
    npm run build - build version will be in the dist folder  
 
 
-<br>
+
 ### Usage  
 ---  
 
@@ -35,7 +35,7 @@
 5. To cancel making the post and exit, click 'Cancel'.  
 
 
-<br>
+
 ### Features  
 ---  
 
@@ -72,7 +72,7 @@
 - Giving more consideration to performance and accessibility.  
 
 
-<br> 
+
 ### Contact  
 ---  
 Emil Joseph - (emiljoseph@gmail.com) (https://www.emiljoseph.io)  
