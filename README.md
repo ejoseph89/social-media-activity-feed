@@ -67,7 +67,7 @@
 - Spacing between menu items, buttons are considered for mobile use.  
 
 ##### Potential improvements  
-- Animations and transitions to make the user experience more enjoyable, and changes more subtle.  
+- Animations and transitions to make the user experience more enjoyable, and changes more subtle, and not snappy.  
 - Proceeding with an object oriented approach for the UI (like the Post Class), where all UI related functions are together.  
 - Giving more consideration to performance and accessibility.  
 
